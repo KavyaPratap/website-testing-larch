@@ -5,105 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Larch Enterprises</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <header>
         <nav class="nav-container">
-            <div class="logo">Larch Enterprises</div>
+            <div class="logo">
+                <img src="logo.png" alt="LarchTree Logo">
+                <p class="plogo">Larch Enterprises</p>
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <i class="menu-toggle fas fa-bars"></i>
         </nav>
     </header>
 
-    <body>
-        <header>
-            <nav class="nav-container">
-                <div class="logo">
-                    <span><img src="logo.png" alt="LarchTree Logo"><p class="plogo">Larch Enterprises</p></span>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <i class="menu-toggle fas fa-bars"></i>
-            </nav>
-        </header>
-    
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1 class="leaf-animation">Larch Enterprises</h1>
-                <p>Premium quality Products.</p>
-                <button class="cta-btn">Explore Products</button>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="leaf-animation">Larch Enterprises</h1>
+            <p>Premium quality Products.</p>
+            <button class="cta-btn">Explore Products</button>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="products-grid">
+            <div class="product-card"><h3>Product 1</h3><p>Description...</p></div>
+            <div class="product-card"><h3>Product 2</h3><p>Description...</p></div>
+            <div class="product-card"><h3>Product 3</h3><p>Description...</p></div>
+            <div class="product-card"><h3>Product 4</h3><p>Description...</p></div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="products.html" class="cta-btn more-products-btn">More Products</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <div class="tree-features">
+                <div class="feature"><i class="fas fa-tree"></i><h4>Feature 1</h4></div>
+                <div class="feature"><i class="fas fa-leaf"></i><h4>Feature 2</h4></div>
+                <div class="feature"><i class="fas fa-certificate"></i><h4>Feature 3</h4></div>
             </div>
-        </section>
-    
-        <section id="products" class="products">
-            <div class="products-grid">
-                <!-- 4 Featured Products -->
-                <div class="product-card">
-                    <h3>....</h3>
-                    <p>,,,,</p>
-                </div>
-                <div class="product-card">
-                    <h3>...</h3>
-                    <p>.....</p>
-                </div>
-                <div class="product-card">
-                    <h3>..........</h3>
-                    <p>nklsc</p>
-                </div>
-                <div class="product-card">
-                    <h3>,...</h3>
-                    <p>...</p>
-                </div>
-            </div>
-            <div style="text-align: center; margin-top: 2rem;">
-                <a href="products.html" class="cta-btn more-products-btn">More Products</a>
-            </div>
-        </section>
-    
-        <section id="about" class="about">
-            <div class="about-content">
-                <h2>-------------</h2>
-                <div class="tree-features">
-                    <div class="feature">
-                        <i class="fas fa-tree"></i>
-                        <h4>-------------</h4>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-leaf"></i>
-                        <h4>-----------</h4>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-certificate"></i>
-                        <h4>-----------</h4>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="contact" class="contact">
-            <div class="contact-form">
-                <h2>Contact Us</h2>
-                <form>
-                    <div class="form-group">
-                        <input type="text" placeholder="Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea rows="5" placeholder="Message" required></textarea>
-                    </div>
-                    <button class="cta-btn">Send Message</button>
-                </form>
-            </div>
-        </section>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form>
+                <div class="form-group"><input type="text" placeholder="Name" required></div>
+                <div class="form-group"><input type="email" placeholder="Email" required></div>
+                <div class="form-group"><textarea rows="5" placeholder="Message" required></textarea></div>
+                <button class="cta-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
